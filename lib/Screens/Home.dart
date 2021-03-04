@@ -99,147 +99,145 @@ class _HomeScreenState extends State<HomeScreen> {
                     topLeft: Radius.circular(60),
                   ),
                 ),
-                child: SingleChildScrollView(
-                  child: Column(
-                    children: [
-                      Container(
-                        padding: EdgeInsets.symmetric(horizontal: 10),
-                        child: Row(
-                          children: [
-                            Icon(
-                              Icons.location_on_outlined,
-                              size: 30,
-                            ),
-                            SizedBox(
-                              width: 5,
-                            ),
-                            Text("Home \n242, ST Marks Eve, Finland"),
-                            SizedBox(
-                              width: size.width * .18,
-                            ),
-                            Icon(
-                              Icons.room_preferences_outlined,
-                              size: 30,
-                            ),
-                          ],
-                        ),
+                child: Column(
+                  children: [
+                    Container(
+                      padding: EdgeInsets.symmetric(horizontal: 10),
+                      child: Row(
+                        children: [
+                          Icon(
+                            Icons.location_on_outlined,
+                            size: 30,
+                          ),
+                          SizedBox(
+                            width: 5,
+                          ),
+                          Text("Home \n242, ST Marks Eve, Finland"),
+                          SizedBox(
+                            width: size.width * .18,
+                          ),
+                          Icon(
+                            Icons.room_preferences_outlined,
+                            size: 30,
+                          ),
+                        ],
                       ),
-                      Container(
-                        padding: EdgeInsets.symmetric(
-                          vertical: 35,
-                        ),
-                        width: size.width,
-                        height: 170,
-                        child: ListView(
-                          scrollDirection: Axis.horizontal,
-                          children: [
-                            CategoryCard(
-                              bgColor: kSecondaryColor,
-                              imageUrl: "assets/images/AllCategory.png",
-                              text: "All",
-                            ),
-                            CategoryCard(
-                              bgColor: Colors.white,
-                              imageUrl: "assets/images/pizza.png",
-                              text: "Pizza",
-                            ),
-                            CategoryCard(
-                              bgColor: Colors.white,
-                              imageUrl: "assets/images/drink.png",
-                              text: "Bevarages",
-                            ),
-                            CategoryCard(
-                              bgColor: Colors.white,
-                              imageUrl: "assets/images/asian.png",
-                              text: "Asian",
-                            ),
-                          ],
-                        ),
+                    ),
+                    Container(
+                      padding: EdgeInsets.symmetric(
+                        vertical: 35,
                       ),
-                      Align(
-                        alignment: Alignment.centerLeft,
-                        child: Text(
-                          "Nearest Restaurants",
-                          style: kMenuTitle,
-                        ),
+                      width: size.width,
+                      height: 170,
+                      child: ListView(
+                        scrollDirection: Axis.horizontal,
+                        children: [
+                          CategoryCard(
+                            bgColor: kSecondaryColor,
+                            imageUrl: "assets/images/AllCategory.png",
+                            text: "All",
+                          ),
+                          CategoryCard(
+                            bgColor: Colors.white,
+                            imageUrl: "assets/images/pizza.png",
+                            text: "Pizza",
+                          ),
+                          CategoryCard(
+                            bgColor: Colors.white,
+                            imageUrl: "assets/images/drink.png",
+                            text: "Bevarages",
+                          ),
+                          CategoryCard(
+                            bgColor: Colors.white,
+                            imageUrl: "assets/images/asian.png",
+                            text: "Asian",
+                          ),
+                        ],
                       ),
-                      Container(
-                        height: 200,
-                        padding:
-                            EdgeInsets.symmetric(vertical: 15, horizontal: 1),
-                        child: ListView(
-                          scrollDirection: Axis.horizontal,
-                          children: [
-                            RestauCard(
-                              imageUrl: "assets/images/food1.jpg",
-                              title: "Westway",
-                              rating: "4.6",
-                              time: "15 min",
-                            ),
-                            RestauCard(
-                              imageUrl: "assets/images/food2.jpg",
-                              title: "Fortune",
-                              rating: "4.6",
-                              time: "15 min",
-                            ),
-                            RestauCard(
-                              imageUrl: "assets/images/food3.jpg",
-                              title: "Seafood",
-                              rating: "4.6",
-                              time: "15 min",
-                            ),
-                            RestauCard(
-                              imageUrl: "assets/images/food4.jpg",
-                              title: "Lay Bhari",
-                              rating: "4.6",
-                              time: "15 min",
-                            ),
-                          ],
-                        ),
+                    ),
+                    Align(
+                      alignment: Alignment.centerLeft,
+                      child: Text(
+                        "Nearest Restaurants",
+                        style: kMenuTitle,
                       ),
-                      Align(
-                        alignment: Alignment.centerLeft,
-                        child: Text(
-                          "Popular Restaurants",
-                          style: kMenuTitle,
-                        ),
+                    ),
+                    Container(
+                      height: 200,
+                      padding:
+                          EdgeInsets.symmetric(vertical: 15, horizontal: 1),
+                      child: ListView(
+                        scrollDirection: Axis.horizontal,
+                        children: [
+                          RestauCard(
+                            imageUrl: "assets/images/food1.jpg",
+                            title: "Westway",
+                            rating: "4.6",
+                            time: "15 min",
+                          ),
+                          RestauCard(
+                            imageUrl: "assets/images/food2.jpg",
+                            title: "Fortune",
+                            rating: "4.6",
+                            time: "15 min",
+                          ),
+                          RestauCard(
+                            imageUrl: "assets/images/food3.jpg",
+                            title: "Seafood",
+                            rating: "4.6",
+                            time: "15 min",
+                          ),
+                          RestauCard(
+                            imageUrl: "assets/images/food4.jpg",
+                            title: "Lay Bhari",
+                            rating: "4.6",
+                            time: "15 min",
+                          ),
+                        ],
                       ),
-                      Container(
-                        height: 200,
-                        padding:
-                            EdgeInsets.symmetric(vertical: 15, horizontal: 1),
-                        child: ListView(
-                          scrollDirection: Axis.horizontal,
-                          children: [
-                            RestauCard(
-                              imageUrl: "assets/images/food4.jpg",
-                              title: "Moonland",
-                              rating: "4.6",
-                              time: "15 min",
-                            ),
-                            RestauCard(
-                              imageUrl: "assets/images/food5.jpg",
-                              title: "Starfish",
-                              rating: "4.6",
-                              time: "15 min",
-                            ),
-                            RestauCard(
-                              imageUrl: "assets/images/food6.jpg",
-                              title: "Fortune",
-                              rating: "4.6",
-                              time: "15 min",
-                            ),
-                            RestauCard(
-                              imageUrl: "assets/images/food1.jpg",
-                              title: "Lay Bhari",
-                              rating: "4.6",
-                              time: "15 min",
-                            ),
-                          ],
-                        ),
+                    ),
+                    Align(
+                      alignment: Alignment.centerLeft,
+                      child: Text(
+                        "Popular Restaurants",
+                        style: kMenuTitle,
                       ),
-                    ],
-                  ),
+                    ),
+                    Container(
+                      height: 200,
+                      padding:
+                          EdgeInsets.symmetric(vertical: 15, horizontal: 1),
+                      child: ListView(
+                        scrollDirection: Axis.horizontal,
+                        children: [
+                          RestauCard(
+                            imageUrl: "assets/images/food4.jpg",
+                            title: "Moonland",
+                            rating: "4.6",
+                            time: "15 min",
+                          ),
+                          RestauCard(
+                            imageUrl: "assets/images/food5.jpg",
+                            title: "Starfish",
+                            rating: "4.6",
+                            time: "15 min",
+                          ),
+                          RestauCard(
+                            imageUrl: "assets/images/food6.jpg",
+                            title: "Fortune",
+                            rating: "4.6",
+                            time: "15 min",
+                          ),
+                          RestauCard(
+                            imageUrl: "assets/images/food1.jpg",
+                            title: "Lay Bhari",
+                            rating: "4.6",
+                            time: "15 min",
+                          ),
+                        ],
+                      ),
+                    ),
+                  ],
                 ),
               ),
             )
